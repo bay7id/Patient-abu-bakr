@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Page with Google Search</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP4V9a3223-r7om2E2OIaC6z0RheSW8gQ6lIER3Qv7s2yayHBrn7g8RUU&s=10') no-repeat center center fixed;
+      background-size: contain; /* Ensures the full image is visible */
+      background-color: black; /* Fills remaining space with black */
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+    }
+    h1 {
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      margin-bottom: 20px;
+    }
+    .search-box {
+      margin-top: 20px;
+    }
+    input[type="text"] {
+      width: 300px;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+    }
+    input[type="submit"] {
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: none;
+      background-color: #4285F4;
+      color: white;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #357AE8;
+    }
+  </style>
+</head>
+<body>
+  <h1></h1>
+  <div class="search-box">
+    <form action="https://www.google.com/search" method="get">
+      <input type="text" name="q" placeholder="Search Google...">
+      <input type="submit" value="Search">
+    </form>
+  </div>
+</body>
+</html>
